@@ -1,0 +1,24 @@
+{
+  "name": "plug-rust-to-node",
+  "version": "0.0.1",
+  "description": "try to create a rust native module used into a node app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "watch": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zacaria/plug-rust-to-node.git"
+  },
+  "author": "Zacaria",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Zacaria/plug-rust-to-node/issues"
+  },
+  "homepage": "https://github.com/Zacaria/plug-rust-to-node#readme",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
