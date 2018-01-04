@@ -1,0 +1,15 @@
+[package]
+
+name = "plug_node"
+version = "0.0.1"
+authors = ["Zacaria <z@havesomeceode.io>"]
+
+[lib]
+name = "plug_node"
+crate-type = ["dylib"]
+
+[dependencies]
+libc = "0.2"
+
+[profile.dev]
+rpath = true

@@ -20,5 +20,8 @@
   "homepage": "https://github.com/Zacaria/plug-rust-to-node#readme",
   "devDependencies": {
     "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "ffi": "^2.2.0"
   }
 }
