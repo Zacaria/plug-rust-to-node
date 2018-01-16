@@ -1,5 +1,6 @@
 # Rust build
 target/
+index.node
 
 # IntelliJ
 .idea
