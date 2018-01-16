@@ -5,8 +5,9 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "watch": "nodemon --exec 'cargo build && npm start' --config ./nodemon.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "nodemon --exec 'neon build && yarn start' --config ./nodemon.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bootstrap": "neon build"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
     "nodemon": "^1.12.1"
   },
   "dependencies": {
-    "ffi": "^2.2.0"
+    "ffi": "^2.2.0",
+    "neon-cli": "^0.1.22"
   }
 }

@@ -1,6 +1,7 @@
 {
   "watch": [
-    "src/",
+    "lib/",
+    "native/",
     "app.js"
   ],
   "ext": "js rs"
