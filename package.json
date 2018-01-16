@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "watch": "nodemon app.js",
+    "watch": "nodemon --exec 'cargo build && npm start' --config ./nodemon.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
