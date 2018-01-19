@@ -1,6 +1,6 @@
 # Rust build
-target/
-index.node
+**/target/
+**/*.node
 
 # IntelliJ
 .idea

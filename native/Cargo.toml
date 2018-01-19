@@ -14,6 +14,7 @@ neon-build = "0.1.22"
 [dependencies]
 #libc = "0.2"
 neon = "0.1.22"
+num_cpus = "1.4.0"
 
-#[profile.dev]
-#rpath = true
+[profile.dev]
+rpath = true

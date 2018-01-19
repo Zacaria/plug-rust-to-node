@@ -1,14 +1,15 @@
 #[macro_use]
 extern crate neon;
+extern crate num_cpus;
 
 use neon::vm::{Call, JsResult};
-use neon::js::JsString;
+use neon::js::JsNumber;
 
-fn hello(call: Call) -> JsResult<JsString> {
+fn cpus(call: Call) -> JsResult<JsNumber> {
     let scope = call.scope;
-    Ok(JsString::new(scope, "hello lz").unwrap())
+    Ok(JsNumber::new(scope, num_cpus::get() as f64))
 }
 
 register_module!(m, {
-    m.export("hello", hello)
+    m.export("cpus", cpus)
 });
